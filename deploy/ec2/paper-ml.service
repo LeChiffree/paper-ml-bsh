@@ -1,0 +1,24 @@
+[Unit]
+Description=Paper ML BSH trading dashboard
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=paperml
+Group=paperml
+WorkingDirectory=/opt/paper-ml/paper_trade_app
+EnvironmentFile=/opt/paper-ml/.env
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/opt/paper-ml/.venv/bin/python -m uvicorn main:app --host 127.0.0.1 --port 8765
+Restart=always
+RestartSec=5
+TimeoutStopSec=30
+KillSignal=SIGINT
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ReadWritePaths=/opt/paper-ml/paper_trade_app/data /opt/paper-ml/paper_trade_app/logs
+
+[Install]
+WantedBy=multi-user.target

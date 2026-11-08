@@ -1,0 +1,13 @@
+[
+  ["5m", "h200_tp20__threshold__t70"],
+  ["4h", "h10_tp10__range_full__t60"],
+  ["15m", "h200_tp10__threshold__t70"],
+  ["1h", "h50_tp10__threshold__t70"],
+  ["1h", "h50_tp10__range_full__t70"],
+  ["4h", "h10_tp10__volatility__t60"],
+  ["1h", "h50_tp10__volatility__t70"],
+  ["5m", "h200_tp10__volatility__t70"],
+  ["5m", "h200_tp10__range_full_volatility__t70"],
+  ["4h", "h10_tp10__volatility__t70"],
+  ["5m", "h3_tp10__range_full__t50"]
+]

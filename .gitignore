@@ -1,0 +1,52 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+mac_dashboard_auth.env
+
+# Runtime databases, state, and logs
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.log
+paper_trade_app/data/
+paper_trade_app/logs/
+paper_trade_app/backups/
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+vendor/
+
+# Generated research and large local corpora
+analysis/
+Drive_PDF/
+outputs/
+research_v2/
+research_v3/
+
+# Transfer/build archives and temporary files
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.tmp
+*.tmp.*
+ec2-paper-ml-deploy.tar.gz
+macbook-paper-ml-bootstrap*.tar.gz
+Paper_ML_BSH_PROJECT_MODELS_SOURCE_*.zip
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+

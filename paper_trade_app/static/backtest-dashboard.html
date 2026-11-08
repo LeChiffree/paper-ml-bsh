@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MotorLab · Backtest Archive</title>
+  <link rel="stylesheet" href="/static/backtest-dashboard.css">
+</head>
+<body>
+  <main>
+    <header><div><p class="eyebrow">MOTORLAB RESEARCH</p><h1>Backtest Archive</h1></div><span id="health">Loading</span></header>
+    <section id="metrics" class="metrics"></section>
+    <section class="panel">
+      <div class="panel-head"><div><p class="eyebrow">PERFORMANCE MAP</p><h2>Timeframe overview</h2></div></div>
+      <div id="timeframes" class="bars"></div>
+    </section>
+    <section class="panel">
+      <div class="panel-head"><div><p class="eyebrow">219 CODED METHODS</p><h2>Scenario catalogue</h2></div>
+        <div class="filters">
+          <select id="tf"><option value="">All timeframes</option></select>
+          <select id="filter"><option value="">All filters</option></select>
+          <label><input id="active" type="checkbox"> Active 11 only</label>
+        </div>
+      </div>
+      <div class="table-wrap"><table><thead><tr><th>ID</th><th>TF</th><th>Scenario</th><th>Filter</th><th>Trades</th><th>Return</th><th>Net PnL</th><th>MDD</th><th>PF</th></tr></thead><tbody id="rows"></tbody></table></div>
+    </section>
+  </main>
+  <script src="/static/backtest-dashboard.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Model Arena · Paper Trade</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="stylesheet" href="/static/spot-demo.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <main>
+    <header>
+      <div>
+        <div class="eyebrow">LIVE EXPERIMENT · BINANCE USDⓈ-M</div>
+        <h1>Model <span>Arena</span></h1>
+        <p class="subtitle">219 strateji, 106 piyasa, dört zaman dilimi. Ayrı sanal hesaplarla canlı ileri test.</p>
+      </div>
+      <div class="statusbox">
+        <div><i id="statusDot"></i><strong id="engineState">BAŞLATILIYOR</strong></div>
+        <small id="lastUpdate">Veri bekleniyor</small>
+      </div>
+    </header>
+
+    <div class="tabnav"><a class="active" href="/">Ana Arena</a><a href="/spot-demo">Spot Demo</a><a href="/leverage-x">KaldıraçX</a></div>
+
+    <section class="alert verified" id="systemAlert">
+      <strong>Doğrulanmış feature sözleşmesi</strong>
+      <span>132 feature taşınabilir orijinal üreticiyle hesaplanıyor; kolon sırası ve 83 modelle inference uyumu test edildi.</span>
+    </section>
+
+    <section class="metrics">
+      <article><label>Toplam gerçekleşen P&amp;L</label><b id="pnl">₺0,00</b><small>219 bağımsız sanal hesabın toplamı</small></article>
+      <article><label>Açık / Bekleyen</label><b id="openPositions">0</b><small id="reserved">₺0 ayrılmış sermaye</small></article>
+      <article><label>Tamamlanan işlem</label><b id="trades">0</b><small id="winRate">— kazanma oranı</small></article>
+      <article><label>Son 24 saat sinyal</label><b id="signals">0</b><small id="universe">106 coin · 83 model</small></article>
+    </section>
+
+    <section class="grid two">
+      <article class="panel">
+        <div class="panelhead"><div><span class="kicker">CANLI DURUM</span><h2>Zaman dilimi sağlığı</h2></div><span id="uptime" class="pill">00:00:00</span></div>
+        <div id="timeframes" class="tfgrid"></div>
+      </article>
+      <article class="panel">
+        <div class="panelhead"><div><span class="kicker">PERFORMANS</span><h2>Zaman dilimine göre P&amp;L</h2></div><span class="pill muted">gerçekleşen</span></div>
+        <div id="bars" class="bars"></div>
+      </article>
+    </section>
+
+    <section class="panel tablepanel">
+      <div class="panelhead controls">
+        <div><span class="kicker">LİDERLİK TABLOSU</span><h2>Strateji portföyleri</h2></div>
+        <div class="filters">
+          <input id="search" type="search" placeholder="Strateji ara…">
+          <select id="tfFilter"><option value="">Tüm periyotlar</option><option>5m</option><option>15m</option><option>1h</option><option>4h</option></select>
+          <select id="stateFilter"><option value="">Tümü</option><option value="1">Aktif</option><option value="0">Bloklu</option></select>
+        </div>
+      </div>
+      <div class="tablewrap"><table>
+        <thead><tr><th>#</th><th>Periyot</th><th>Strateji</th><th>Filtre</th><th>Durum</th><th>İşlem</th><th>Başarı</th><th>P&amp;L</th><th>Getiri</th></tr></thead>
+        <tbody id="scenarioRows"><tr><td colspan="9" class="empty">Yükleniyor…</td></tr></tbody>
+      </table></div>
+    </section>
+
+    <section class="grid two bottom">
+      <article class="panel">
+        <div class="panelhead"><div><span class="kicker">POZİSYONLAR</span><h2>Açık ve bekleyen</h2></div><span class="pill" id="positionCount">0</span></div>
+        <div id="positions" class="feed"><div class="empty">Henüz pozisyon yok</div></div>
+      </article>
+      <article class="panel">
+        <div class="panelhead"><div><span class="kicker">SİSTEM AKIŞI</span><h2>Son olaylar</h2></div><span class="pill muted">UTC</span></div>
+        <div id="events" class="feed"><div class="empty">Akış bekleniyor…</div></div>
+      </article>
+    </section>
+
+    <footer><span>MODEL ARENA / PAPER ONLY</span><span>Otomatik yenileme · 5 sn</span></footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

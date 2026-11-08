@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.motorlab.papertrade</string>
+  <key>LimitLoadToSessionType</key>
+  <string>Background</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/berfin/paper-ml-bsh/.venv/bin/python</string>
+    <string>-m</string>
+    <string>uvicorn</string>
+    <string>main:app</string>
+    <string>--host</string>
+    <string>0.0.0.0</string>
+    <string>--port</string>
+    <string>8765</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/berfin/paper-ml-bsh/paper_trade_app</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>DYLD_LIBRARY_PATH</key>
+    <string>/Users/berfin/.local/libomp-runtime/lib</string>
+    <key>PT_ACTIVE_SCENARIO_IDS</key>
+    <string>5,9,10,15,19,49,56,64,79,108,111</string>
+    <key>PT_LIVE_ENABLED</key>
+    <string>true</string>
+    <key>PT_MOTORLAB_DEMO_ENABLED</key>
+    <string>false</string>
+    <key>PT_LEGACY_DEMO_ENABLED</key>
+    <string>false</string>
+    <key>PT_MOTORLAB_DEMO_ACCOUNTS</key>
+    <string>futures_10x</string>
+    <key>PT_MOTORLAB_DEMO_MARGIN_USDT</key>
+    <string>10</string>
+    <key>PT_EXECUTION_ACCOUNT_MARGIN_USDT</key>
+    <string>10</string>
+    <key>PT_EXECUTION_ACCOUNT_INITIAL_EQUITY</key>
+    <string>1000</string>
+    <key>PT_WARMUP_BARS</key>
+    <string>1500</string>
+    <key>PT_CANDLE_GRACE_SECONDS</key>
+    <string>15</string>
+    <key>PT_ENTRY_MAX_LAG_SECONDS</key>
+    <string>180</string>
+    <key>PT_FULL_HISTORY_ENABLED</key>
+    <string>true</string>
+    <key>PT_HISTORY_START_UTC</key>
+    <string>2022-08-01T00:00:00Z</string>
+    <key>PT_DASHBOARD_AUTH_ENABLED</key>
+    <string>false</string>
+  </dict>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>ThrottleInterval</key>
+  <integer>10</integer>
+  <key>StandardOutPath</key>
+  <string>/Users/berfin/paper-ml-bsh/paper_trade_app/logs/launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/berfin/paper-ml-bsh/paper_trade_app/logs/launchd.err.log</string>
+</dict>
+</plist>
+
+
+

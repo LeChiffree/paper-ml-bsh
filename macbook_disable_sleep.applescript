@@ -1,0 +1,1 @@
+do shell script "/usr/bin/pmset -a sleep 0; /usr/bin/pmset -a disksleep 0; /usr/bin/pmset -a standby 0; /usr/bin/pmset -a hibernatemode 0; /usr/bin/pmset -a powernap 0; /usr/bin/pmset -a disablesleep 1; /usr/bin/pmset -a womp 1" with administrator privileges

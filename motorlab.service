@@ -1,0 +1,19 @@
+[Unit]
+Description=MotorLab Paper and Binance Demo Trading
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/paper-ml-bsh/paper_trade_app
+Environment=PYTHONUNBUFFERED=1
+Environment=PT_HOST=0.0.0.0
+Environment=PT_PORT=8765
+ExecStart=/home/ubuntu/paper-ml-bsh/.venv/bin/python -m uvicorn main:app --host 0.0.0.0 --port 8765
+Restart=always
+RestartSec=10
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target
