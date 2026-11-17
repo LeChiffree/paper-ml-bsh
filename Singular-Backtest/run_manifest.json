@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-11-17T19:37:57Z",
+  "scope": "scenario",
+  "source_rows": 54325,
+  "accepted_rows": 44266,
+  "blocked_rows": 10059,
+  "meta": {
+    "symbols": 105,
+    "scenarios": 219,
+    "scenario_names": 170,
+    "strategies": 29,
+    "start": "2025-12-09 03:05:00",
+    "end": "2026-09-09 02:20:00",
+    "timeframes": [
+      "15m",
+      "1h",
+      "4h",
+      "5m"
+    ],
+    "source": "PAPER_TRADE_POSITIVE_MODELS_1M_EXECUTION/paper_trade_package/BACKTEST_POSITIVE_METHODS_1M_EXECUTION.xlsx",
+    "stake_tl": 10000.0,
+    "initial_tl": 100000.0,
+    "timezone": "Türkiye saati (UTC+3, kaynak dosyadaki gibi)"
+  }
+}

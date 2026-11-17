@@ -43,6 +43,25 @@ Open `http://127.0.0.1:8766/`. The dashboard exposes the 219-scenario catalogue,
 timeframe aggregates, current active-11 filter, and paginated trade detail API.
 It does not start the live paper engine or submit orders.
 
+## Singular-Backtest (tek açık işlem)
+
+[`Singular-Backtest/`](Singular-Backtest/README.md) applies a one-open-trade
+rule to the packaged backtest: for each scenario and coin, a new signal is
+blocked while a trade is already open. The normal backtest allows stacking
+(10,059 of 54,325 signals arrive during an open trade), while the paper-trade
+guide asks for one position per coin. The variant reuses the detailed trade
+list, so it does not rerun the ML models.
+
+```bash
+python Singular-Backtest/run_singular.py
+python Singular-Backtest/verify_singular.py
+python Singular-Backtest/summarize_singular.py
+```
+
+Outputs land in `Singular-Backtest/results/`; the dashboard payload is
+`Singular-Backtest/singular_results.json`. Scope can be switched with
+`--scope scenario|scenario_name|strategy`.
+
 ## Security and local state
 
 Secrets and runtime state are intentionally not committed. Create local `.env`
