@@ -98,13 +98,20 @@ def metrics(g: pd.DataFrame, capital_tl: float = INITIAL_TL) -> dict:
             "trades": 0, "wins": 0, "losses": 0, "win_rate": 0.0,
             "avg_ret": 0.0, "retAll": 0.0, "ret2026": 0.0,
             "winRatio": 0.0, "winHoldH": 0.0,
-            "profitDays": 0, "lossDays": 0, "maxDD": 0.0,
+            "profitDays": 0, "lossDays": 0,
+            "profitWeeks": 0, "lossWeeks": 0,
+            "profitMonths": 0, "lossMonths": 0, "maxDD": 0.0,
             "tp": 0, "sl": 0, "time": 0, "net_pnl_tl": 0.0,
             "symbols": 0,
         }
     win = g["net_pnl_tl"] > 0
     hold_h = (g["exit_time"] - g["entry_time"]).dt.total_seconds() / 3600.0
-    daily = g.groupby(g["exit_time"].dt.floor("D"))["net_pnl_tl"].sum()
+    day_key = g["exit_time"].dt.floor("D")
+    week_key = day_key - pd.to_timedelta(day_key.dt.dayofweek, unit="D")
+    month_key = g["exit_time"].dt.strftime("%Y-%m")
+    daily = g.groupby(day_key)["net_pnl_tl"].sum()
+    weekly = g.groupby(week_key)["net_pnl_tl"].sum()
+    monthly = g.groupby(month_key)["net_pnl_tl"].sum()
     g_chrono = g.sort_values("exit_time", kind="mergesort")
     year2026 = g["exit_time"].dt.year == 2026
     wins = int(win.sum())
@@ -122,6 +129,10 @@ def metrics(g: pd.DataFrame, capital_tl: float = INITIAL_TL) -> dict:
         "winHoldH": float(hold_h[win].mean()) if win.any() else 0.0,
         "profitDays": int((daily > 0).sum()),
         "lossDays": int((daily < 0).sum()),
+        "profitWeeks": int((weekly > 0).sum()),
+        "lossWeeks": int((weekly < 0).sum()),
+        "profitMonths": int((monthly > 0).sum()),
+        "lossMonths": int((monthly < 0).sum()),
         "maxDD": _max_drawdown(g_chrono["net_pnl_tl"], capital_tl),
         "tp": int((outcome == "TP").sum()),
         "sl": int((outcome == "SL").sum()),
