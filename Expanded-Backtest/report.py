@@ -24,6 +24,7 @@ def metrics(g: pd.DataFrame, capital: float = INITIAL) -> dict:
         return {
             "trades": 0, "wins": 0, "losses": 0, "win_rate": 0.0,
             "avg_ret": 0.0, "retAll": 0.0, "ret2026": 0.0,
+            "avg_ret2026": 0.0,
             "winRatio": 0.0, "winHoldH": 0.0,
             "profitDays": 0, "lossDays": 0, "maxDD": 0.0,
             "tp": 0, "sl": 0, "time": 0, "net_pnl_tl": 0.0,
@@ -45,6 +46,8 @@ def metrics(g: pd.DataFrame, capital: float = INITIAL) -> dict:
         "avg_ret": float(g["net_return_pct"].mean()),
         "retAll": float(g["net_pnl_tl"].sum() / capital * 100.0),
         "ret2026": float(g.loc[year2026, "net_pnl_tl"].sum() / capital * 100.0),
+        "avg_ret2026": (float(g.loc[year2026, "net_return_pct"].mean())
+                        if year2026.any() else 0.0),
         "winRatio": wins / losses if losses else float(wins),
         "winHoldH": float(hold_h[win].mean()) if win.any() else 0.0,
         "profitDays": int((daily > 0).sum()),

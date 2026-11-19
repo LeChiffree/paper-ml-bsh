@@ -46,8 +46,8 @@ def update_rows(rows: list[dict], payload: dict) -> tuple[list[dict], int]:
         row["strategy"] = str(scenario["strategy"])
         row["filter"] = (filter_name if threshold is None
                          else f"{filter_name} (t={float(threshold):g})")
-        row["retAll"] = round(float(scenario["s_retAll"]), 6)
-        row["ret2026"] = round(float(scenario["s_ret2026"]), 6)
+        row["retAll"] = round(float(scenario["s_avg_ret"]), 6)
+        row["ret2026"] = round(float(scenario["s_avg_ret2026"]), 6)
         row["trades"] = int(scenario["s_trades"])
         row["winRatio"] = round(float(scenario["s_winRatio"]), 4)
         row["winHoldH"] = round(float(scenario["s_winHoldH"]), 2)
