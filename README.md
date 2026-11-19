@@ -62,6 +62,24 @@ Outputs land in `Singular-Backtest/results/`; the dashboard payload is
 `Singular-Backtest/singular_results.json`. Scope can be switched with
 `--scope scenario|scenario_name|strategy`.
 
+## Expanded-Backtest (tüm coinler, ilk tarihten)
+
+[`Expanded-Backtest/`](Expanded-Backtest/README.md) reruns the same 219
+scenarios on every coin in `D:\1mdatabinance\1m` (526 symbols), starting each
+coin at its own first available 1m candle. Higher timeframes are derived from
+1m, the packaged 132-feature engine and 83 LightGBM models are reused, and both
+the normal 10-slot portfolio and the singular one-position rule are produced.
+
+```bash
+python Expanded-Backtest/prepare_context.py
+python Expanded-Backtest/run_expanded.py run --workers 8
+python Expanded-Backtest/run_expanded.py merge
+python Expanded-Backtest/validate.py
+```
+
+The dashboard payload is written to `Expanded-Backtest/results/` and can be
+published with `Expanded-Backtest/update_dashboard.py` after the merge.
+
 ## Security and local state
 
 Secrets and runtime state are intentionally not committed. Create local `.env`

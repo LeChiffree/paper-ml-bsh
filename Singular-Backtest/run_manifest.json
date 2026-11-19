@@ -1,25 +1,33 @@
 {
-  "generated_at": "2026-11-18T18:14:33Z",
+  "generated_at": "2026-11-19T17:25:50Z",
   "scope": "scenario",
-  "source_rows": 54325,
-  "accepted_rows": 44266,
-  "blocked_rows": 10059,
+  "source_rows": 1977267,
+  "accepted_rows": 1069881,
+  "blocked_rows": 907386,
   "meta": {
-    "symbols": 105,
+    "symbols": 526,
     "scenarios": 219,
     "scenario_names": 170,
     "strategies": 29,
-    "start": "2025-12-09 03:05:00",
-    "end": "2026-09-09 02:20:00",
+    "start": "2020-01-03 19:10:00",
+    "end": "2026-11-17 21:20:00",
     "timeframes": [
       "15m",
       "1h",
       "4h",
       "5m"
     ],
-    "source": "PAPER_TRADE_POSITIVE_MODELS_1M_EXECUTION/paper_trade_package/BACKTEST_POSITIVE_METHODS_1M_EXECUTION.xlsx",
+    "source": "D:/1mdatabinance/1m (526 coin 1m arşivi; 58 coin CSV+parquet)",
     "stake_tl": 10000.0,
     "initial_tl": 100000.0,
-    "timezone": "Türkiye saati (UTC+3, kaynak dosyadaki gibi)"
+    "timezone": "Türkiye saati (UTC+3, kaynak dosyadaki gibi)",
+    "warmup_bars": 200,
+    "max_concurrent_positions": 10,
+    "admission": "Kronolojik sinyal; senaryo başına en fazla 10 eşzamanlı 10.000 TL pozisyon; aynı coin üst üste binebilir.",
+    "funding": "4h: 8 saatte %0,0108 sabit funding; 5m/15m/1h: funding yok.",
+    "unseen_symbol_handling": "Model symbol_map dışındaki coinler NaN kategori ile skorlanır.",
+    "raw_candidates": 77478192,
+    "accepted_normal": 1977267,
+    "accepted_singular": 1069881
   }
 }

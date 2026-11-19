@@ -1,0 +1,9 @@
+# Generated per-coin candidates and derived market caches (regenerable)
+candidates/
+cache/
+results/*.parquet
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/

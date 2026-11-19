@@ -1,0 +1,1761 @@
+{
+  "book_trades": 54325,
+  "book_raw_coverage": 0.9530050621260929,
+  "expanded_admitted": 187646,
+  "matched_admitted": 24944,
+  "matched_pct_of_book": 0.45916244822825586,
+  "per_scenario": [
+    {
+      "sid": 1,
+      "book": 1125,
+      "raw_candidates": 71812,
+      "raw_hit": 1117,
+      "admitted": 4503,
+      "matched": 226
+    },
+    {
+      "sid": 2,
+      "book": 436,
+      "raw_candidates": 20148,
+      "raw_hit": 431,
+      "admitted": 3184,
+      "matched": 210
+    },
+    {
+      "sid": 3,
+      "book": 594,
+      "raw_candidates": 30212,
+      "raw_hit": 584,
+      "admitted": 2378,
+      "matched": 118
+    },
+    {
+      "sid": 4,
+      "book": 490,
+      "raw_candidates": 22355,
+      "raw_hit": 481,
+      "admitted": 2507,
+      "matched": 138
+    },
+    {
+      "sid": 5,
+      "book": 707,
+      "raw_candidates": 3641,
+      "raw_hit": 705,
+      "admitted": 2084,
+      "matched": 411
+    },
+    {
+      "sid": 6,
+      "book": 707,
+      "raw_candidates": 3639,
+      "raw_hit": 705,
+      "admitted": 2084,
+      "matched": 411
+    },
+    {
+      "sid": 7,
+      "book": 964,
+      "raw_candidates": 31283,
+      "raw_hit": 959,
+      "admitted": 6278,
+      "matched": 480
+    },
+    {
+      "sid": 8,
+      "book": 955,
+      "raw_candidates": 30992,
+      "raw_hit": 950,
+      "admitted": 6265,
+      "matched": 474
+    },
+    {
+      "sid": 9,
+      "book": 207,
+      "raw_candidates": 3585,
+      "raw_hit": 204,
+      "admitted": 1210,
+      "matched": 97
+    },
+    {
+      "sid": 10,
+      "book": 1249,
+      "raw_candidates": 18208,
+      "raw_hit": 1238,
+      "admitted": 4028,
+      "matched": 465
+    },
+    {
+      "sid": 11,
+      "book": 1249,
+      "raw_candidates": 18069,
+      "raw_hit": 1238,
+      "admitted": 4028,
+      "matched": 465
+    },
+    {
+      "sid": 12,
+      "book": 153,
+      "raw_candidates": 1718,
+      "raw_hit": 152,
+      "admitted": 639,
+      "matched": 78
+    },
+    {
+      "sid": 13,
+      "book": 151,
+      "raw_candidates": 1690,
+      "raw_hit": 150,
+      "admitted": 639,
+      "matched": 78
+    },
+    {
+      "sid": 14,
+      "book": 207,
+      "raw_candidates": 3551,
+      "raw_hit": 204,
+      "admitted": 1210,
+      "matched": 97
+    },
+    {
+      "sid": 15,
+      "book": 476,
+      "raw_candidates": 6859,
+      "raw_hit": 467,
+      "admitted": 1584,
+      "matched": 208
+    },
+    {
+      "sid": 16,
+      "book": 476,
+      "raw_candidates": 6720,
+      "raw_hit": 467,
+      "admitted": 1584,
+      "matched": 208
+    },
+    {
+      "sid": 17,
+      "book": 476,
+      "raw_candidates": 6859,
+      "raw_hit": 467,
+      "admitted": 1584,
+      "matched": 208
+    },
+    {
+      "sid": 18,
+      "book": 770,
+      "raw_candidates": 44738,
+      "raw_hit": 763,
+      "admitted": 4583,
+      "matched": 228
+    },
+    {
+      "sid": 19,
+      "book": 296,
+      "raw_candidates": 1802,
+      "raw_hit": 295,
+      "admitted": 1133,
+      "matched": 186
+    },
+    {
+      "sid": 20,
+      "book": 296,
+      "raw_candidates": 1800,
+      "raw_hit": 295,
+      "admitted": 1133,
+      "matched": 186
+    },
+    {
+      "sid": 21,
+      "book": 296,
+      "raw_candidates": 1802,
+      "raw_hit": 295,
+      "admitted": 1133,
+      "matched": 186
+    },
+    {
+      "sid": 22,
+      "book": 1203,
+      "raw_candidates": 242157,
+      "raw_hit": 1201,
+      "admitted": 2396,
+      "matched": 51
+    },
+    {
+      "sid": 23,
+      "book": 758,
+      "raw_candidates": 43950,
+      "raw_hit": 752,
+      "admitted": 4543,
+      "matched": 221
+    },
+    {
+      "sid": 24,
+      "book": 72,
+      "raw_candidates": 621,
+      "raw_hit": 72,
+      "admitted": 194,
+      "matched": 51
+    },
+    {
+      "sid": 25,
+      "book": 72,
+      "raw_candidates": 621,
+      "raw_hit": 72,
+      "admitted": 194,
+      "matched": 51
+    },
+    {
+      "sid": 26,
+      "book": 72,
+      "raw_candidates": 593,
+      "raw_hit": 72,
+      "admitted": 194,
+      "matched": 51
+    },
+    {
+      "sid": 27,
+      "book": 544,
+      "raw_candidates": 16527,
+      "raw_hit": 537,
+      "admitted": 2936,
+      "matched": 246
+    },
+    {
+      "sid": 28,
+      "book": 539,
+      "raw_candidates": 16356,
+      "raw_hit": 532,
+      "admitted": 2934,
+      "matched": 246
+    },
+    {
+      "sid": 29,
+      "book": 636,
+      "raw_candidates": 34578,
+      "raw_hit": 629,
+      "admitted": 4120,
+      "matched": 228
+    },
+    {
+      "sid": 30,
+      "book": 61,
+      "raw_candidates": 2297,
+      "raw_hit": 61,
+      "admitted": 673,
+      "matched": 43
+    },
+    {
+      "sid": 31,
+      "book": 61,
+      "raw_candidates": 2297,
+      "raw_hit": 61,
+      "admitted": 673,
+      "matched": 43
+    },
+    {
+      "sid": 32,
+      "book": 1088,
+      "raw_candidates": 2606,
+      "raw_hit": 916,
+      "admitted": 1815,
+      "matched": 808
+    },
+    {
+      "sid": 33,
+      "book": 1088,
+      "raw_candidates": 2633,
+      "raw_hit": 916,
+      "admitted": 1815,
+      "matched": 808
+    },
+    {
+      "sid": 34,
+      "book": 52,
+      "raw_candidates": 2006,
+      "raw_hit": 52,
+      "admitted": 606,
+      "matched": 36
+    },
+    {
+      "sid": 35,
+      "book": 149,
+      "raw_candidates": 1071,
+      "raw_hit": 146,
+      "admitted": 721,
+      "matched": 128
+    },
+    {
+      "sid": 36,
+      "book": 149,
+      "raw_candidates": 1071,
+      "raw_hit": 146,
+      "admitted": 721,
+      "matched": 128
+    },
+    {
+      "sid": 37,
+      "book": 75,
+      "raw_candidates": 295,
+      "raw_hit": 75,
+      "admitted": 269,
+      "matched": 67
+    },
+    {
+      "sid": 38,
+      "book": 75,
+      "raw_candidates": 295,
+      "raw_hit": 75,
+      "admitted": 269,
+      "matched": 67
+    },
+    {
+      "sid": 39,
+      "book": 187,
+      "raw_candidates": 2446,
+      "raw_hit": 187,
+      "admitted": 643,
+      "matched": 115
+    },
+    {
+      "sid": 40,
+      "book": 187,
+      "raw_candidates": 2448,
+      "raw_hit": 187,
+      "admitted": 643,
+      "matched": 115
+    },
+    {
+      "sid": 41,
+      "book": 195,
+      "raw_candidates": 1179,
+      "raw_hit": 174,
+      "admitted": 290,
+      "matched": 113
+    },
+    {
+      "sid": 42,
+      "book": 195,
+      "raw_candidates": 1180,
+      "raw_hit": 174,
+      "admitted": 290,
+      "matched": 113
+    },
+    {
+      "sid": 43,
+      "book": 466,
+      "raw_candidates": 1422,
+      "raw_hit": 330,
+      "admitted": 1129,
+      "matched": 275
+    },
+    {
+      "sid": 44,
+      "book": 466,
+      "raw_candidates": 1422,
+      "raw_hit": 330,
+      "admitted": 1129,
+      "matched": 275
+    },
+    {
+      "sid": 45,
+      "book": 85,
+      "raw_candidates": 362,
+      "raw_hit": 76,
+      "admitted": 113,
+      "matched": 55
+    },
+    {
+      "sid": 46,
+      "book": 85,
+      "raw_candidates": 363,
+      "raw_hit": 76,
+      "admitted": 113,
+      "matched": 55
+    },
+    {
+      "sid": 47,
+      "book": 85,
+      "raw_candidates": 363,
+      "raw_hit": 76,
+      "admitted": 113,
+      "matched": 55
+    },
+    {
+      "sid": 48,
+      "book": 638,
+      "raw_candidates": 11119,
+      "raw_hit": 630,
+      "admitted": 4851,
+      "matched": 437
+    },
+    {
+      "sid": 49,
+      "book": 341,
+      "raw_candidates": 5203,
+      "raw_hit": 341,
+      "admitted": 437,
+      "matched": 123
+    },
+    {
+      "sid": 50,
+      "book": 341,
+      "raw_candidates": 5203,
+      "raw_hit": 341,
+      "admitted": 437,
+      "matched": 123
+    },
+    {
+      "sid": 51,
+      "book": 341,
+      "raw_candidates": 5203,
+      "raw_hit": 341,
+      "admitted": 437,
+      "matched": 123
+    },
+    {
+      "sid": 52,
+      "book": 23,
+      "raw_candidates": 86,
+      "raw_hit": 23,
+      "admitted": 84,
+      "matched": 23
+    },
+    {
+      "sid": 53,
+      "book": 23,
+      "raw_candidates": 86,
+      "raw_hit": 23,
+      "admitted": 84,
+      "matched": 23
+    },
+    {
+      "sid": 54,
+      "book": 23,
+      "raw_candidates": 86,
+      "raw_hit": 23,
+      "admitted": 84,
+      "matched": 23
+    },
+    {
+      "sid": 55,
+      "book": 72,
+      "raw_candidates": 1979,
+      "raw_hit": 72,
+      "admitted": 499,
+      "matched": 49
+    },
+    {
+      "sid": 56,
+      "book": 72,
+      "raw_candidates": 1979,
+      "raw_hit": 72,
+      "admitted": 499,
+      "matched": 49
+    },
+    {
+      "sid": 57,
+      "book": 79,
+      "raw_candidates": 380,
+      "raw_hit": 64,
+      "admitted": 98,
+      "matched": 40
+    },
+    {
+      "sid": 58,
+      "book": 79,
+      "raw_candidates": 407,
+      "raw_hit": 64,
+      "admitted": 99,
+      "matched": 40
+    },
+    {
+      "sid": 59,
+      "book": 79,
+      "raw_candidates": 407,
+      "raw_hit": 64,
+      "admitted": 99,
+      "matched": 40
+    },
+    {
+      "sid": 60,
+      "book": 1184,
+      "raw_candidates": 467827,
+      "raw_hit": 1182,
+      "admitted": 2409,
+      "matched": 52
+    },
+    {
+      "sid": 61,
+      "book": 412,
+      "raw_candidates": 1198,
+      "raw_hit": 300,
+      "admitted": 1006,
+      "matched": 265
+    },
+    {
+      "sid": 62,
+      "book": 71,
+      "raw_candidates": 1808,
+      "raw_hit": 71,
+      "admitted": 493,
+      "matched": 46
+    },
+    {
+      "sid": 63,
+      "book": 45,
+      "raw_candidates": 484,
+      "raw_hit": 45,
+      "admitted": 104,
+      "matched": 25
+    },
+    {
+      "sid": 64,
+      "book": 45,
+      "raw_candidates": 484,
+      "raw_hit": 45,
+      "admitted": 104,
+      "matched": 25
+    },
+    {
+      "sid": 65,
+      "book": 118,
+      "raw_candidates": 540,
+      "raw_hit": 113,
+      "admitted": 119,
+      "matched": 66
+    },
+    {
+      "sid": 66,
+      "book": 118,
+      "raw_candidates": 540,
+      "raw_hit": 113,
+      "admitted": 119,
+      "matched": 66
+    },
+    {
+      "sid": 67,
+      "book": 118,
+      "raw_candidates": 540,
+      "raw_hit": 113,
+      "admitted": 119,
+      "matched": 66
+    },
+    {
+      "sid": 68,
+      "book": 985,
+      "raw_candidates": 4603,
+      "raw_hit": 789,
+      "admitted": 1971,
+      "matched": 523
+    },
+    {
+      "sid": 69,
+      "book": 985,
+      "raw_candidates": 4603,
+      "raw_hit": 789,
+      "admitted": 1971,
+      "matched": 523
+    },
+    {
+      "sid": 70,
+      "book": 985,
+      "raw_candidates": 4587,
+      "raw_hit": 789,
+      "admitted": 1971,
+      "matched": 523
+    },
+    {
+      "sid": 71,
+      "book": 55,
+      "raw_candidates": 201,
+      "raw_hit": 45,
+      "admitted": 77,
+      "matched": 32
+    },
+    {
+      "sid": 72,
+      "book": 55,
+      "raw_candidates": 201,
+      "raw_hit": 45,
+      "admitted": 77,
+      "matched": 32
+    },
+    {
+      "sid": 73,
+      "book": 55,
+      "raw_candidates": 201,
+      "raw_hit": 45,
+      "admitted": 77,
+      "matched": 32
+    },
+    {
+      "sid": 74,
+      "book": 230,
+      "raw_candidates": 1065,
+      "raw_hit": 215,
+      "admitted": 249,
+      "matched": 118
+    },
+    {
+      "sid": 75,
+      "book": 230,
+      "raw_candidates": 1065,
+      "raw_hit": 215,
+      "admitted": 249,
+      "matched": 118
+    },
+    {
+      "sid": 76,
+      "book": 45,
+      "raw_candidates": 450,
+      "raw_hit": 45,
+      "admitted": 104,
+      "matched": 25
+    },
+    {
+      "sid": 77,
+      "book": 85,
+      "raw_candidates": 340,
+      "raw_hit": 75,
+      "admitted": 127,
+      "matched": 51
+    },
+    {
+      "sid": 78,
+      "book": 85,
+      "raw_candidates": 340,
+      "raw_hit": 75,
+      "admitted": 127,
+      "matched": 51
+    },
+    {
+      "sid": 79,
+      "book": 306,
+      "raw_candidates": 6891,
+      "raw_hit": 306,
+      "admitted": 257,
+      "matched": 56
+    },
+    {
+      "sid": 80,
+      "book": 306,
+      "raw_candidates": 6891,
+      "raw_hit": 306,
+      "admitted": 257,
+      "matched": 56
+    },
+    {
+      "sid": 81,
+      "book": 126,
+      "raw_candidates": 1511,
+      "raw_hit": 125,
+      "admitted": 278,
+      "matched": 49
+    },
+    {
+      "sid": 82,
+      "book": 126,
+      "raw_candidates": 1511,
+      "raw_hit": 125,
+      "admitted": 278,
+      "matched": 49
+    },
+    {
+      "sid": 83,
+      "book": 126,
+      "raw_candidates": 1511,
+      "raw_hit": 125,
+      "admitted": 278,
+      "matched": 49
+    },
+    {
+      "sid": 84,
+      "book": 959,
+      "raw_candidates": 94922,
+      "raw_hit": 956,
+      "admitted": 2661,
+      "matched": 78
+    },
+    {
+      "sid": 85,
+      "book": 134,
+      "raw_candidates": 5212,
+      "raw_hit": 134,
+      "admitted": 995,
+      "matched": 81
+    },
+    {
+      "sid": 86,
+      "book": 156,
+      "raw_candidates": 2042,
+      "raw_hit": 155,
+      "admitted": 413,
+      "matched": 73
+    },
+    {
+      "sid": 87,
+      "book": 156,
+      "raw_candidates": 2042,
+      "raw_hit": 155,
+      "admitted": 413,
+      "matched": 73
+    },
+    {
+      "sid": 88,
+      "book": 815,
+      "raw_candidates": 15519,
+      "raw_hit": 808,
+      "admitted": 6026,
+      "matched": 504
+    },
+    {
+      "sid": 89,
+      "book": 45,
+      "raw_candidates": 149,
+      "raw_hit": 44,
+      "admitted": 149,
+      "matched": 44
+    },
+    {
+      "sid": 90,
+      "book": 45,
+      "raw_candidates": 148,
+      "raw_hit": 43,
+      "admitted": 148,
+      "matched": 43
+    },
+    {
+      "sid": 91,
+      "book": 60,
+      "raw_candidates": 457,
+      "raw_hit": 46,
+      "admitted": 76,
+      "matched": 36
+    },
+    {
+      "sid": 92,
+      "book": 60,
+      "raw_candidates": 457,
+      "raw_hit": 46,
+      "admitted": 76,
+      "matched": 36
+    },
+    {
+      "sid": 93,
+      "book": 60,
+      "raw_candidates": 457,
+      "raw_hit": 46,
+      "admitted": 76,
+      "matched": 36
+    },
+    {
+      "sid": 94,
+      "book": 905,
+      "raw_candidates": 17865,
+      "raw_hit": 897,
+      "admitted": 4386,
+      "matched": 477
+    },
+    {
+      "sid": 95,
+      "book": 905,
+      "raw_candidates": 17865,
+      "raw_hit": 897,
+      "admitted": 4386,
+      "matched": 477
+    },
+    {
+      "sid": 96,
+      "book": 905,
+      "raw_candidates": 17865,
+      "raw_hit": 897,
+      "admitted": 4386,
+      "matched": 477
+    },
+    {
+      "sid": 97,
+      "book": 649,
+      "raw_candidates": 1760,
+      "raw_hit": 526,
+      "admitted": 1088,
+      "matched": 384
+    },
+    {
+      "sid": 98,
+      "book": 649,
+      "raw_candidates": 1760,
+      "raw_hit": 526,
+      "admitted": 1088,
+      "matched": 384
+    },
+    {
+      "sid": 99,
+      "book": 649,
+      "raw_candidates": 1760,
+      "raw_hit": 526,
+      "admitted": 1088,
+      "matched": 384
+    },
+    {
+      "sid": 100,
+      "book": 731,
+      "raw_candidates": 32732,
+      "raw_hit": 723,
+      "admitted": 3982,
+      "matched": 285
+    },
+    {
+      "sid": 101,
+      "book": 195,
+      "raw_candidates": 6351,
+      "raw_hit": 194,
+      "admitted": 1124,
+      "matched": 96
+    },
+    {
+      "sid": 102,
+      "book": 43,
+      "raw_candidates": 127,
+      "raw_hit": 43,
+      "admitted": 90,
+      "matched": 36
+    },
+    {
+      "sid": 103,
+      "book": 43,
+      "raw_candidates": 125,
+      "raw_hit": 43,
+      "admitted": 90,
+      "matched": 36
+    },
+    {
+      "sid": 104,
+      "book": 43,
+      "raw_candidates": 127,
+      "raw_hit": 43,
+      "admitted": 90,
+      "matched": 36
+    },
+    {
+      "sid": 105,
+      "book": 219,
+      "raw_candidates": 968,
+      "raw_hit": 219,
+      "admitted": 288,
+      "matched": 162
+    },
+    {
+      "sid": 106,
+      "book": 219,
+      "raw_candidates": 968,
+      "raw_hit": 219,
+      "admitted": 288,
+      "matched": 162
+    },
+    {
+      "sid": 107,
+      "book": 237,
+      "raw_candidates": 8794,
+      "raw_hit": 233,
+      "admitted": 1735,
+      "matched": 113
+    },
+    {
+      "sid": 108,
+      "book": 673,
+      "raw_candidates": 10251,
+      "raw_hit": 668,
+      "admitted": 1828,
+      "matched": 330
+    },
+    {
+      "sid": 109,
+      "book": 673,
+      "raw_candidates": 10251,
+      "raw_hit": 668,
+      "admitted": 1828,
+      "matched": 330
+    },
+    {
+      "sid": 110,
+      "book": 215,
+      "raw_candidates": 940,
+      "raw_hit": 215,
+      "admitted": 342,
+      "matched": 158
+    },
+    {
+      "sid": 111,
+      "book": 215,
+      "raw_candidates": 940,
+      "raw_hit": 215,
+      "admitted": 342,
+      "matched": 158
+    },
+    {
+      "sid": 112,
+      "book": 215,
+      "raw_candidates": 940,
+      "raw_hit": 215,
+      "admitted": 342,
+      "matched": 158
+    },
+    {
+      "sid": 113,
+      "book": 221,
+      "raw_candidates": 7719,
+      "raw_hit": 218,
+      "admitted": 1699,
+      "matched": 115
+    },
+    {
+      "sid": 114,
+      "book": 200,
+      "raw_candidates": 921,
+      "raw_hit": 199,
+      "admitted": 906,
+      "matched": 196
+    },
+    {
+      "sid": 115,
+      "book": 165,
+      "raw_candidates": 504,
+      "raw_hit": 163,
+      "admitted": 503,
+      "matched": 163
+    },
+    {
+      "sid": 116,
+      "book": 360,
+      "raw_candidates": 2055,
+      "raw_hit": 341,
+      "admitted": 573,
+      "matched": 240
+    },
+    {
+      "sid": 117,
+      "book": 360,
+      "raw_candidates": 2055,
+      "raw_hit": 341,
+      "admitted": 573,
+      "matched": 240
+    },
+    {
+      "sid": 118,
+      "book": 36,
+      "raw_candidates": 364,
+      "raw_hit": 36,
+      "admitted": 331,
+      "matched": 35
+    },
+    {
+      "sid": 119,
+      "book": 150,
+      "raw_candidates": 894,
+      "raw_hit": 143,
+      "admitted": 232,
+      "matched": 100
+    },
+    {
+      "sid": 120,
+      "book": 150,
+      "raw_candidates": 894,
+      "raw_hit": 143,
+      "admitted": 232,
+      "matched": 100
+    },
+    {
+      "sid": 121,
+      "book": 22,
+      "raw_candidates": 169,
+      "raw_hit": 22,
+      "admitted": 155,
+      "matched": 22
+    },
+    {
+      "sid": 122,
+      "book": 12,
+      "raw_candidates": 54,
+      "raw_hit": 11,
+      "admitted": 45,
+      "matched": 11
+    },
+    {
+      "sid": 123,
+      "book": 67,
+      "raw_candidates": 304,
+      "raw_hit": 56,
+      "admitted": 94,
+      "matched": 31
+    },
+    {
+      "sid": 124,
+      "book": 67,
+      "raw_candidates": 304,
+      "raw_hit": 56,
+      "admitted": 94,
+      "matched": 31
+    },
+    {
+      "sid": 125,
+      "book": 67,
+      "raw_candidates": 303,
+      "raw_hit": 56,
+      "admitted": 94,
+      "matched": 31
+    },
+    {
+      "sid": 126,
+      "book": 166,
+      "raw_candidates": 508,
+      "raw_hit": 164,
+      "admitted": 507,
+      "matched": 164
+    },
+    {
+      "sid": 127,
+      "book": 255,
+      "raw_candidates": 1270,
+      "raw_hit": 255,
+      "admitted": 440,
+      "matched": 167
+    },
+    {
+      "sid": 128,
+      "book": 255,
+      "raw_candidates": 1270,
+      "raw_hit": 255,
+      "admitted": 440,
+      "matched": 167
+    },
+    {
+      "sid": 129,
+      "book": 72,
+      "raw_candidates": 277,
+      "raw_hit": 72,
+      "admitted": 277,
+      "matched": 72
+    },
+    {
+      "sid": 130,
+      "book": 21,
+      "raw_candidates": 166,
+      "raw_hit": 21,
+      "admitted": 152,
+      "matched": 21
+    },
+    {
+      "sid": 131,
+      "book": 71,
+      "raw_candidates": 408,
+      "raw_hit": 71,
+      "admitted": 243,
+      "matched": 48
+    },
+    {
+      "sid": 132,
+      "book": 71,
+      "raw_candidates": 408,
+      "raw_hit": 71,
+      "admitted": 243,
+      "matched": 48
+    },
+    {
+      "sid": 133,
+      "book": 31,
+      "raw_candidates": 98,
+      "raw_hit": 16,
+      "admitted": 93,
+      "matched": 15
+    },
+    {
+      "sid": 134,
+      "book": 31,
+      "raw_candidates": 98,
+      "raw_hit": 16,
+      "admitted": 93,
+      "matched": 15
+    },
+    {
+      "sid": 135,
+      "book": 20,
+      "raw_candidates": 94,
+      "raw_hit": 20,
+      "admitted": 37,
+      "matched": 14
+    },
+    {
+      "sid": 136,
+      "book": 20,
+      "raw_candidates": 94,
+      "raw_hit": 20,
+      "admitted": 37,
+      "matched": 14
+    },
+    {
+      "sid": 137,
+      "book": 2044,
+      "raw_candidates": 773763,
+      "raw_hit": 2041,
+      "admitted": 4828,
+      "matched": 45
+    },
+    {
+      "sid": 138,
+      "book": 832,
+      "raw_candidates": 15699,
+      "raw_hit": 825,
+      "admitted": 6087,
+      "matched": 508
+    },
+    {
+      "sid": 139,
+      "book": 13,
+      "raw_candidates": 82,
+      "raw_hit": 13,
+      "admitted": 25,
+      "matched": 7
+    },
+    {
+      "sid": 140,
+      "book": 13,
+      "raw_candidates": 82,
+      "raw_hit": 13,
+      "admitted": 25,
+      "matched": 7
+    },
+    {
+      "sid": 141,
+      "book": 13,
+      "raw_candidates": 82,
+      "raw_hit": 13,
+      "admitted": 25,
+      "matched": 7
+    },
+    {
+      "sid": 142,
+      "book": 77,
+      "raw_candidates": 248,
+      "raw_hit": 58,
+      "admitted": 217,
+      "matched": 57
+    },
+    {
+      "sid": 143,
+      "book": 77,
+      "raw_candidates": 248,
+      "raw_hit": 58,
+      "admitted": 217,
+      "matched": 57
+    },
+    {
+      "sid": 144,
+      "book": 21,
+      "raw_candidates": 149,
+      "raw_hit": 19,
+      "admitted": 29,
+      "matched": 16
+    },
+    {
+      "sid": 145,
+      "book": 21,
+      "raw_candidates": 149,
+      "raw_hit": 19,
+      "admitted": 29,
+      "matched": 16
+    },
+    {
+      "sid": 146,
+      "book": 21,
+      "raw_candidates": 149,
+      "raw_hit": 19,
+      "admitted": 29,
+      "matched": 16
+    },
+    {
+      "sid": 147,
+      "book": 50,
+      "raw_candidates": 238,
+      "raw_hit": 49,
+      "admitted": 236,
+      "matched": 49
+    },
+    {
+      "sid": 148,
+      "book": 2200,
+      "raw_candidates": 706842,
+      "raw_hit": 2191,
+      "admitted": 4826,
+      "matched": 52
+    },
+    {
+      "sid": 149,
+      "book": 50,
+      "raw_candidates": 239,
+      "raw_hit": 49,
+      "admitted": 237,
+      "matched": 49
+    },
+    {
+      "sid": 150,
+      "book": 352,
+      "raw_candidates": 5607,
+      "raw_hit": 347,
+      "admitted": 2884,
+      "matched": 282
+    },
+    {
+      "sid": 151,
+      "book": 245,
+      "raw_candidates": 1243,
+      "raw_hit": 235,
+      "admitted": 1014,
+      "matched": 214
+    },
+    {
+      "sid": 152,
+      "book": 46,
+      "raw_candidates": 151,
+      "raw_hit": 46,
+      "admitted": 143,
+      "matched": 46
+    },
+    {
+      "sid": 153,
+      "book": 46,
+      "raw_candidates": 151,
+      "raw_hit": 46,
+      "admitted": 143,
+      "matched": 46
+    },
+    {
+      "sid": 154,
+      "book": 246,
+      "raw_candidates": 1253,
+      "raw_hit": 206,
+      "admitted": 379,
+      "matched": 148
+    },
+    {
+      "sid": 155,
+      "book": 246,
+      "raw_candidates": 1253,
+      "raw_hit": 206,
+      "admitted": 379,
+      "matched": 148
+    },
+    {
+      "sid": 156,
+      "book": 1012,
+      "raw_candidates": 65899,
+      "raw_hit": 990,
+      "admitted": 3667,
+      "matched": 181
+    },
+    {
+      "sid": 157,
+      "book": 41,
+      "raw_candidates": 139,
+      "raw_hit": 41,
+      "admitted": 135,
+      "matched": 41
+    },
+    {
+      "sid": 158,
+      "book": 30,
+      "raw_candidates": 176,
+      "raw_hit": 29,
+      "admitted": 175,
+      "matched": 29
+    },
+    {
+      "sid": 159,
+      "book": 11,
+      "raw_candidates": 139,
+      "raw_hit": 11,
+      "admitted": 125,
+      "matched": 11
+    },
+    {
+      "sid": 160,
+      "book": 188,
+      "raw_candidates": 715,
+      "raw_hit": 184,
+      "admitted": 715,
+      "matched": 184
+    },
+    {
+      "sid": 161,
+      "book": 26,
+      "raw_candidates": 104,
+      "raw_hit": 26,
+      "admitted": 104,
+      "matched": 26
+    },
+    {
+      "sid": 162,
+      "book": 39,
+      "raw_candidates": 81,
+      "raw_hit": 39,
+      "admitted": 50,
+      "matched": 34
+    },
+    {
+      "sid": 163,
+      "book": 39,
+      "raw_candidates": 81,
+      "raw_hit": 39,
+      "admitted": 50,
+      "matched": 34
+    },
+    {
+      "sid": 164,
+      "book": 39,
+      "raw_candidates": 81,
+      "raw_hit": 39,
+      "admitted": 50,
+      "matched": 34
+    },
+    {
+      "sid": 165,
+      "book": 28,
+      "raw_candidates": 404,
+      "raw_hit": 24,
+      "admitted": 45,
+      "matched": 17
+    },
+    {
+      "sid": 166,
+      "book": 28,
+      "raw_candidates": 404,
+      "raw_hit": 24,
+      "admitted": 45,
+      "matched": 17
+    },
+    {
+      "sid": 167,
+      "book": 28,
+      "raw_candidates": 404,
+      "raw_hit": 24,
+      "admitted": 45,
+      "matched": 17
+    },
+    {
+      "sid": 168,
+      "book": 15,
+      "raw_candidates": 46,
+      "raw_hit": 15,
+      "admitted": 35,
+      "matched": 13
+    },
+    {
+      "sid": 169,
+      "book": 15,
+      "raw_candidates": 46,
+      "raw_hit": 15,
+      "admitted": 35,
+      "matched": 13
+    },
+    {
+      "sid": 170,
+      "book": 15,
+      "raw_candidates": 46,
+      "raw_hit": 15,
+      "admitted": 35,
+      "matched": 13
+    },
+    {
+      "sid": 171,
+      "book": 32,
+      "raw_candidates": 170,
+      "raw_hit": 32,
+      "admitted": 170,
+      "matched": 32
+    },
+    {
+      "sid": 172,
+      "book": 1,
+      "raw_candidates": 22,
+      "raw_hit": 1,
+      "admitted": 22,
+      "matched": 1
+    },
+    {
+      "sid": 173,
+      "book": 139,
+      "raw_candidates": 261,
+      "raw_hit": 128,
+      "admitted": 261,
+      "matched": 128
+    },
+    {
+      "sid": 174,
+      "book": 30,
+      "raw_candidates": 92,
+      "raw_hit": 15,
+      "admitted": 87,
+      "matched": 14
+    },
+    {
+      "sid": 175,
+      "book": 208,
+      "raw_candidates": 9130,
+      "raw_hit": 206,
+      "admitted": 1041,
+      "matched": 70
+    },
+    {
+      "sid": 176,
+      "book": 208,
+      "raw_candidates": 9128,
+      "raw_hit": 206,
+      "admitted": 1041,
+      "matched": 70
+    },
+    {
+      "sid": 177,
+      "book": 199,
+      "raw_candidates": 922,
+      "raw_hit": 190,
+      "admitted": 826,
+      "matched": 183
+    },
+    {
+      "sid": 178,
+      "book": 148,
+      "raw_candidates": 313,
+      "raw_hit": 137,
+      "admitted": 313,
+      "matched": 137
+    },
+    {
+      "sid": 179,
+      "book": 60,
+      "raw_candidates": 214,
+      "raw_hit": 60,
+      "admitted": 214,
+      "matched": 60
+    },
+    {
+      "sid": 180,
+      "book": 10,
+      "raw_candidates": 76,
+      "raw_hit": 10,
+      "admitted": 76,
+      "matched": 10
+    },
+    {
+      "sid": 181,
+      "book": 28,
+      "raw_candidates": 733,
+      "raw_hit": 26,
+      "admitted": 300,
+      "matched": 26
+    },
+    {
+      "sid": 182,
+      "book": 21,
+      "raw_candidates": 61,
+      "raw_hit": 21,
+      "admitted": 42,
+      "matched": 21
+    },
+    {
+      "sid": 183,
+      "book": 21,
+      "raw_candidates": 61,
+      "raw_hit": 21,
+      "admitted": 42,
+      "matched": 21
+    },
+    {
+      "sid": 184,
+      "book": 21,
+      "raw_candidates": 54,
+      "raw_hit": 21,
+      "admitted": 42,
+      "matched": 21
+    },
+    {
+      "sid": 185,
+      "book": 21,
+      "raw_candidates": 54,
+      "raw_hit": 21,
+      "admitted": 42,
+      "matched": 21
+    },
+    {
+      "sid": 186,
+      "book": 21,
+      "raw_candidates": 54,
+      "raw_hit": 21,
+      "admitted": 42,
+      "matched": 21
+    },
+    {
+      "sid": 187,
+      "book": 7,
+      "raw_candidates": 89,
+      "raw_hit": 7,
+      "admitted": 86,
+      "matched": 7
+    },
+    {
+      "sid": 188,
+      "book": 7,
+      "raw_candidates": 89,
+      "raw_hit": 7,
+      "admitted": 86,
+      "matched": 7
+    },
+    {
+      "sid": 189,
+      "book": 2,
+      "raw_candidates": 80,
+      "raw_hit": 2,
+      "admitted": 77,
+      "matched": 2
+    },
+    {
+      "sid": 190,
+      "book": 20,
+      "raw_candidates": 648,
+      "raw_hit": 19,
+      "admitted": 248,
+      "matched": 19
+    },
+    {
+      "sid": 191,
+      "book": 974,
+      "raw_candidates": 102590,
+      "raw_hit": 973,
+      "admitted": 2642,
+      "matched": 72
+    },
+    {
+      "sid": 192,
+      "book": 51,
+      "raw_candidates": 131,
+      "raw_hit": 36,
+      "admitted": 112,
+      "matched": 36
+    },
+    {
+      "sid": 193,
+      "book": 22,
+      "raw_candidates": 34,
+      "raw_hit": 22,
+      "admitted": 34,
+      "matched": 22
+    },
+    {
+      "sid": 194,
+      "book": 22,
+      "raw_candidates": 34,
+      "raw_hit": 22,
+      "admitted": 34,
+      "matched": 22
+    },
+    {
+      "sid": 195,
+      "book": 81,
+      "raw_candidates": 278,
+      "raw_hit": 81,
+      "admitted": 278,
+      "matched": 81
+    },
+    {
+      "sid": 196,
+      "book": 10,
+      "raw_candidates": 18,
+      "raw_hit": 10,
+      "admitted": 18,
+      "matched": 10
+    },
+    {
+      "sid": 197,
+      "book": 3,
+      "raw_candidates": 31,
+      "raw_hit": 3,
+      "admitted": 31,
+      "matched": 3
+    },
+    {
+      "sid": 198,
+      "book": 5,
+      "raw_candidates": 104,
+      "raw_hit": 5,
+      "admitted": 58,
+      "matched": 4
+    },
+    {
+      "sid": 199,
+      "book": 5,
+      "raw_candidates": 47,
+      "raw_hit": 5,
+      "admitted": 40,
+      "matched": 5
+    },
+    {
+      "sid": 200,
+      "book": 3,
+      "raw_candidates": 5,
+      "raw_hit": 3,
+      "admitted": 5,
+      "matched": 3
+    },
+    {
+      "sid": 201,
+      "book": 6,
+      "raw_candidates": 25,
+      "raw_hit": 6,
+      "admitted": 25,
+      "matched": 6
+    },
+    {
+      "sid": 202,
+      "book": 4,
+      "raw_candidates": 6,
+      "raw_hit": 4,
+      "admitted": 6,
+      "matched": 4
+    },
+    {
+      "sid": 203,
+      "book": 1,
+      "raw_candidates": 83,
+      "raw_hit": 1,
+      "admitted": 63,
+      "matched": 1
+    },
+    {
+      "sid": 204,
+      "book": 8,
+      "raw_candidates": 17,
+      "raw_hit": 8,
+      "admitted": 17,
+      "matched": 8
+    },
+    {
+      "sid": 205,
+      "book": 6,
+      "raw_candidates": 25,
+      "raw_hit": 6,
+      "admitted": 25,
+      "matched": 6
+    },
+    {
+      "sid": 206,
+      "book": 6,
+      "raw_candidates": 25,
+      "raw_hit": 6,
+      "admitted": 25,
+      "matched": 6
+    },
+    {
+      "sid": 207,
+      "book": 1,
+      "raw_candidates": 12,
+      "raw_hit": 1,
+      "admitted": 12,
+      "matched": 1
+    },
+    {
+      "sid": 208,
+      "book": 3,
+      "raw_candidates": 225,
+      "raw_hit": 3,
+      "admitted": 103,
+      "matched": 3
+    },
+    {
+      "sid": 209,
+      "book": 5,
+      "raw_candidates": 10,
+      "raw_hit": 5,
+      "admitted": 10,
+      "matched": 5
+    },
+    {
+      "sid": 210,
+      "book": 1,
+      "raw_candidates": 19,
+      "raw_hit": 1,
+      "admitted": 19,
+      "matched": 1
+    },
+    {
+      "sid": 211,
+      "book": 2,
+      "raw_candidates": 9,
+      "raw_hit": 2,
+      "admitted": 9,
+      "matched": 2
+    },
+    {
+      "sid": 212,
+      "book": 2,
+      "raw_candidates": 15,
+      "raw_hit": 2,
+      "admitted": 15,
+      "matched": 2
+    },
+    {
+      "sid": 213,
+      "book": 6,
+      "raw_candidates": 12,
+      "raw_hit": 5,
+      "admitted": 12,
+      "matched": 5
+    },
+    {
+      "sid": 214,
+      "book": 22,
+      "raw_candidates": 111,
+      "raw_hit": 22,
+      "admitted": 111,
+      "matched": 22
+    },
+    {
+      "sid": 215,
+      "book": 1,
+      "raw_candidates": 12,
+      "raw_hit": 1,
+      "admitted": 12,
+      "matched": 1
+    },
+    {
+      "sid": 216,
+      "book": 1,
+      "raw_candidates": 2,
+      "raw_hit": 1,
+      "admitted": 2,
+      "matched": 1
+    },
+    {
+      "sid": 217,
+      "book": 1,
+      "raw_candidates": 1,
+      "raw_hit": 1,
+      "admitted": 1,
+      "matched": 1
+    },
+    {
+      "sid": 218,
+      "book": 3,
+      "raw_candidates": 34,
+      "raw_hit": 3,
+      "admitted": 34,
+      "matched": 3
+    },
+    {
+      "sid": 219,
+      "book": 4,
+      "raw_candidates": 19,
+      "raw_hit": 3,
+      "admitted": 19,
+      "matched": 3
+    }
+  ]
+}
