@@ -53,6 +53,10 @@ def update_rows(rows: list[dict], payload: dict) -> tuple[list[dict], int]:
         row["winHoldH"] = round(float(scenario["n_winHoldH"]), 2)
         row["profitDays"] = int(scenario["n_profitDays"])
         row["lossDays"] = int(scenario["n_lossDays"])
+        row["profitWeeks"] = int(scenario["n_profitWeeks"])
+        row["lossWeeks"] = int(scenario["n_lossWeeks"])
+        row["profitMonths"] = int(scenario["n_profitMonths"])
+        row["lossMonths"] = int(scenario["n_lossMonths"])
         row["detail"] = f"paper-ml-bsh · scenario {sid} · {targets.get(sid, '')}"
         changed += 1
     return rows, changed

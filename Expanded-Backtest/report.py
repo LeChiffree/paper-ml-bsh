@@ -27,12 +27,16 @@ def metrics(g: pd.DataFrame, capital: float = INITIAL) -> dict:
             "avg_ret2026": 0.0,
             "winRatio": 0.0, "winHoldH": 0.0,
             "profitDays": 0, "lossDays": 0, "maxDD": 0.0,
+            "profitWeeks": 0, "lossWeeks": 0,
+            "profitMonths": 0, "lossMonths": 0,
             "tp": 0, "sl": 0, "time": 0, "net_pnl_tl": 0.0,
             "symbols": 0,
         }
     win = g["net_pnl_tl"] > 0
     hold_h = (g["exit_time"] - g["entry_time"]).dt.total_seconds() / 3600.0
     daily = g.groupby(g["exit_time"].dt.floor("D"))["net_pnl_tl"].sum()
+    weekly = g.groupby(g["exit_time"].dt.to_period("W"))["net_pnl_tl"].sum()
+    monthly = g.groupby(g["exit_time"].dt.to_period("M"))["net_pnl_tl"].sum()
     chrono = g.sort_values("exit_time", kind="mergesort")
     year2026 = g["exit_time"].dt.year == 2026
     wins = int(win.sum())
@@ -52,6 +56,10 @@ def metrics(g: pd.DataFrame, capital: float = INITIAL) -> dict:
         "winHoldH": float(hold_h[win].mean()) if win.any() else 0.0,
         "profitDays": int((daily > 0).sum()),
         "lossDays": int((daily < 0).sum()),
+        "profitWeeks": int((weekly > 0).sum()),
+        "lossWeeks": int((weekly < 0).sum()),
+        "profitMonths": int((monthly > 0).sum()),
+        "lossMonths": int((monthly < 0).sum()),
         "maxDD": _max_drawdown(chrono["net_pnl_tl"], capital),
         "tp": int((outcome == "TP").sum()),
         "sl": int((outcome == "SL").sum()),
