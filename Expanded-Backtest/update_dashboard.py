@@ -102,9 +102,15 @@ def main() -> None:
         json.dump(allinone, handle, ensure_ascii=False, indent=2)
     print(f"allinone.json Paper ML rows updated={changed}")
 
-    frame = pd.DataFrame(rows, columns=allinone["columns"])
+    frame = pd.DataFrame(rows).reindex(columns=[
+        "source", "strategy", "filter", "timeframe", "retAll", "ret2026",
+        "trades", "winRatio", "winHoldH", "profitDays", "lossDays",
+    ])
+    frame.columns = allinone["columns"]
+    for column in ["All Getiri %", "2026 Getiri %", "Karlı/Zararlı İşlem", "Karlı İşlem Ort. Süre (saat)"]:
+        frame[column] = pd.to_numeric(frame[column], errors="coerce")
     frame.to_csv(DASH / "allinone.csv", sep=";", index=False,
-                 encoding="utf-8-sig")
+                 encoding="utf-8-sig", decimal=",")
     with pd.ExcelWriter(DASH / "Allinone.xlsx", engine="openpyxl") as writer:
         frame.to_excel(writer, sheet_name="Allinone", index=False)
     print("allinone.csv / Allinone.xlsx written")
