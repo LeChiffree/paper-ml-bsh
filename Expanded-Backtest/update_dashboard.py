@@ -46,13 +46,13 @@ def update_rows(rows: list[dict], payload: dict) -> tuple[list[dict], int]:
         row["strategy"] = str(scenario["strategy"])
         row["filter"] = (filter_name if threshold is None
                          else f"{filter_name} (t={float(threshold):g})")
-        row["retAll"] = round(float(scenario["s_avg_ret"]), 6)
-        row["ret2026"] = round(float(scenario["s_avg_ret2026"]), 6)
-        row["trades"] = int(scenario["s_trades"])
-        row["winRatio"] = round(float(scenario["s_winRatio"]), 4)
-        row["winHoldH"] = round(float(scenario["s_winHoldH"]), 2)
-        row["profitDays"] = int(scenario["s_profitDays"])
-        row["lossDays"] = int(scenario["s_lossDays"])
+        row["retAll"] = round(float(scenario["n_avg_ret"]), 6)
+        row["ret2026"] = round(float(scenario["n_avg_ret2026"]), 6)
+        row["trades"] = int(scenario["n_trades"])
+        row["winRatio"] = round(float(scenario["n_winRatio"]), 4)
+        row["winHoldH"] = round(float(scenario["n_winHoldH"]), 2)
+        row["profitDays"] = int(scenario["n_profitDays"])
+        row["lossDays"] = int(scenario["n_lossDays"])
         row["detail"] = f"paper-ml-bsh · scenario {sid} · {targets.get(sid, '')}"
         changed += 1
     return rows, changed
