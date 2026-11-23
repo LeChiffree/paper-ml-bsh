@@ -34,16 +34,20 @@ CSV_FIELDS = [
     ("Karlı İşlem Ort. Süre (saat)", "winHoldH"),
     ("Karlı Gün", "profitDays"),
     ("Karsız Gün", "lossDays"),
+    ("Gün Oranı", "dayRatio"),
     ("Karlı Hafta", "profitWeeks"),
     ("Karsız Hafta", "lossWeeks"),
+    ("Hafta Oranı", "weekRatio"),
     ("Karlı Ay", "profitMonths"),
     ("Karsız Ay", "lossMonths"),
+    ("Ay Oranı", "monthRatio"),
 ]
 
 NUMERIC_FIELDS = {
     "retAll", "ret2026", "winRatio", "winHoldH",
     "profitDays", "lossDays", "profitWeeks", "lossWeeks",
     "profitMonths", "lossMonths",
+    "dayRatio", "weekRatio", "monthRatio",
 }
 INTEGER_FIELDS = {
     "trades", "profitDays", "lossDays",
@@ -126,6 +130,25 @@ def fill_periods(rows: list[dict], by_key: dict) -> int:
     return filled
 
 
+def add_ratios(rows: list[dict]) -> None:
+    """Attach profit/loss period ratios (profit / loss) to every row."""
+    pairs = [
+        ("profitDays", "lossDays", "dayRatio"),
+        ("profitWeeks", "lossWeeks", "weekRatio"),
+        ("profitMonths", "lossMonths", "monthRatio"),
+    ]
+    for row in rows:
+        for pfield, lfield, rfield in pairs:
+            profit = row.get(pfield)
+            loss = row.get(lfield)
+            if profit is None or loss is None:
+                row[rfield] = None
+            elif loss:
+                row[rfield] = round(float(profit) / float(loss), 4)
+            else:
+                row[rfield] = None
+
+
 def write_allinone(path: Path, allinone: dict, rows: list[dict]) -> None:
     allinone["generated"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
     allinone["row_count"] = len(rows)
@@ -200,6 +223,7 @@ def main() -> None:
     by_key = load_singular_by_key(DASH / "singular" / "summary.js")
     filled = fill_periods(rows, by_key)
     print(f"normal week/month fields filled from summary={filled}")
+    add_ratios(rows)
     write_allinone(all_path, allinone, rows)
     write_tables(rows)
     print("allinone.csv / Allinone.xlsx written")
